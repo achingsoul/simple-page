@@ -37,7 +37,7 @@ ul,ol{
     padding-top: 46px;
     padding-bottom: 50px;
 }
-.banner > h2{
+.banner h2{
     background: #D8D8D8;
     display: inline-block;
     border-radius: 14px;
@@ -46,6 +46,21 @@ ul,ol{
     margin-bottom: 10px;
     line-height: 34px;
     padding: 3px 0;
+}
+.banner .one-line-header h2{
+    padding-left: 2.75em;
+    padding-right: 2.75em;
+}
+.banner .one-line-header{
+    display: none;
+}
+@media (min-width:500px) {
+ .banner .two-lines-header{
+       display: none;
+   }
+ .banner .one-line-header{
+    display: block;      
+   }
 }
 .banner .details{
     padding-top: 10px;
@@ -60,7 +75,13 @@ ul,ol{
     border-radius: 14px;
     margin-top: 20px;
 }
-
+@media (min-width:500px) {
+ .banner .details p{
+    max-width: none;
+    margin-left: 52px;
+    margin-right: 52px;
+   }
+}
 /* products 模块*/
 .products{
     margin: 0 16px;
@@ -68,12 +89,21 @@ ul,ol{
 .products>ol{
     margin-top: 42px;
 }
-.products >ol>li{}
+@media(min-width:500px){
+.products>ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+.products >ol>li{
+    width: 50%;
+    max-width: 288px;
+    }
+}
 .products .product {
     margin-top: 32px;
 }
 .products .product>.img {
-    min-width: 288px;
     height: 180px;/*图片不需要写高度，它会自己算 */
     background: #D8D8D8;
     border-radius: 4px;
