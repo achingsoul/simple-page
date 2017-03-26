@@ -10,7 +10,6 @@ ul,ol{
     text-align: center;
 }
 .logo > .img > img{ 
-    image: url(images0/Shiseido-logo.gif);
     width: 72px;
     height: 72px;
     border-radius: 36px;
@@ -114,9 +113,9 @@ ul,ol{
 .products .product {
     margin-top: 32px;
 }
-.products .product>.img {
+.products .product>img {
     height: 180px;/*图片不需要写高度，它会自己算 */
-    background: #D8D8D8;
+    /*background: #D8D8D8;*/
     border-radius: 4px;
 }
 .products .product>h3 {
