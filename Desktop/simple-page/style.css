@@ -9,8 +9,7 @@ ul,ol{
 .logo{
     text-align: center;
 }
-.logo img{ 
-    display: inline-block;
+.logo > .img > img{ 
     width: 72px;
     height: 72px;
     border-radius: 36px;
